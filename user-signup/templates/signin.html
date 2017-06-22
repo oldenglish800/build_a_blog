@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>SignUp</h1>
+    <form action= "/" method= "POST">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for= "Username">Username</label>
+            </td>
+            <td>
+              <input name= "username" type="text" value>
+              <span class="error">{{ username_error }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for= "Password">Password</label>
+            </td>
+            <td>
+              <input name= "password" type= "password">
+              <span class= "error">{{ password_error }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for= "Verifingpassword">Verify Password</label>
+            </td>
+            <td>
+              <input name= "verifypassword" type= "password">
+              <span class= "error">{{ verfiy_error }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for= "Email">Email(optional)</label>
+            </td>
+            <td>
+              <input name= "email" type= "email" value>
+              <span class= "error">{{ email_error }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit">
+    </form>
+    {% endblock %}
+Add Comment
