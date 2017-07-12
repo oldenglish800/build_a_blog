@@ -56,3 +56,4 @@ def welcome():
 def index():
     return render_template('signin.html')
 
+app.run ()
